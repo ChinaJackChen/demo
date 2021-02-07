@@ -57,6 +57,12 @@
                     <imageTags>
                         <imageTag>${project.version}</imageTag>
                     </imageTags>
+                    <!--镜像仓库地址-->
+                    <registryUrl>119.23.62.62:50000</registryUrl>
+                    <!--是否往仓库推送镜像-->
+                    <pushImage>true</pushImage>
+                    <!--推送镜像的名称-->
+                    <imageName>119.23.62.62:50000/${project.artifactId}:${project.version}</imageName>
                     <!--构建镜像的配置信息-->
                     <resources>
                         <resource>
